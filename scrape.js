@@ -18,6 +18,7 @@ var TOKEN_PATH = TOKEN_DIR + 'calendar-nodejs-quickstart.json';
 fs.readFile('client_secret.json', function processClientSecrets(err, content) {
   if (err) {
     console.log('Error loading client secret file: ' + err);
+    console.log('Visit https://console.developers.google.com/apis/credentials to download a new client secret.');
     return;
   }
   // Authorize a client with the loaded credentials, then call the
